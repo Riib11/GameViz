@@ -1,0 +1,30 @@
+digraph {
+
+"1" [label="1"]
+"1" -> "H" [label="H"]
+"1" -> "T" [label="T"]
+
+"H" [label="2"]
+"H" -> "HH" [label="H"]
+"H" -> "HT" [label="T"]
+
+"HH" [label="x/y"]
+
+"HT" [label="x/y"]
+
+"T" [label="2"]
+"T" -> "TH" [label="H"]
+"T" -> "TT" [label="T"]
+
+"TH" [label="x/y"]
+
+"TT" [label="x/y"]
+
+// ranks
+{rank=same; "1";}
+{rank=same; "H"; "T";}
+{rank=same; "HH"; "HT"; "TH"; "TT";}
+
+// group 1
+H -> T [style="dashed", arrowhead="none"]
+}

@@ -1,0 +1,3 @@
+[console_scripts]
+gameviz = gameviz.__main__:main
+
