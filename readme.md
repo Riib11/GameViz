@@ -1,5 +1,6 @@
 # GameViz
 
+A simple graphing notation for Game Theory diagrams that transpiles to GraphViz.
 
 ## Prerequisites
 
@@ -14,10 +15,8 @@
     # installs bash commands, installs python3 module
     sh ~/git/GameViz/install.sh
 
-## Updating
+## Usage
 
-    sh ~/git/GameViz/update.sh
+To produce the `.dot` and `.png` files of your local `.gdot` graphs, use
 
-## Compiling to HTML
-
-    gdot <input>.gdot
+    gameviz *.gdot
