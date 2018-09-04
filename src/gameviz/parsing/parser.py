@@ -33,6 +33,9 @@ def parse(lines):
     parent = None
 
     for line in lines:
+        # comment
+        if line.strip().startswith("#"): continue
+        
         line = split_with(line.strip(), seperators)
         group = line[line.index("(")+1].strip() if "(" in line else None
 
