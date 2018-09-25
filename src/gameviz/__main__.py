@@ -19,3 +19,5 @@ def main():
                 file_new.write(compiled)
             # dot image
             call(["dot","-Tpng", "-o"+filename_root+".png", filename_new])
+
+main()
